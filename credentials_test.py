@@ -53,7 +53,6 @@ class TestCredential(unittest.TestCase):
             self.new_credential.save_credential()
             test_credential = Credential("Test","user","0712345678","test@user.com") # new contact
             test_credential.save_credential()
-
             self.new_credential.test_delete_credential()# Deleting a contact object
             self.assertEqual(len(Credential.credtial_list),1)   
 
